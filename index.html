@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Academic Portfolio | Jan Niklas Kolf</title>
+    <meta
+      name="description"
+      content="Jan Niklas Kolf"
+    />
+    <link rel="stylesheet" href="style.css?v=20260515-site-legal" />
+  </head>
+  <body>
+    <header class="meta" aria-label="Site status">
+      <div class="meta__cell meta__status">
+        <span>Jan Niklas Kolf</span>
+      </div>
+      <a class="meta__mark" href="#top" aria-label="Back to top">
+        <span class="mark-symbol">JK</span>
+      </a>
+      <button class="meta__menu" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span>Menu</span>
+        <span aria-hidden="true"></span>
+      </button>
+      <nav class="meta__nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__media hero__media--mesh" aria-label="Animated teacher to student face-recognition mesh">
+          <canvas id="distillation-hero" class="distillation-canvas" aria-hidden="true"></canvas>
+          <div class="hero-terms" aria-hidden="true">
+            <span id="hero-live-term">
+              <span class="hero-term__item is-active">From high-dimensional face inputs to compact identity embeddings</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" id="about" aria-labelledby="about-title">
+        <div class="section__idx">01</div>
+        <div class="section__label">About</div>
+        <div class="section__body">
+          <div class="about-grid">
+            <div class="about-copy">
+              <h2 id="about-title">Hi, I'm Jan Niklas Kolf</h2>
+              <p>
+                I am a research scientist at Fraunhofer IGD and a doctoral researcher at TU Darmstadt.
+                My PhD is supervised by Arjan Kuijper, Naser Damer, and Fadi Boutros, and is conducted within the Embedded Biometrics project of ATHENE, the German National Research Center for Applied Cybersecurity.
+                My work focuses on advancing biometric recognition systems from both algorithmic and deployment-oriented perspectives.
+              </p>
+              <p>
+                I received the European Biometrics Research Award and the Best Presentation Award at the 19th European Biometrics Max Snijder, Research, and Industry Awards of the European Association for Biometrics for my doctoral research.
+              </p>
+              <p>
+                In summer 2025, I was a research intern at Meta Reality Labs in Burlingame, California, under the supervision of Ozan Tezcan.
+              </p>
+              <p>
+                I previously completed master’s degrees in Autonomous Systems and Visual Computing at TU Darmstadt, graduating with honors in both programs.
+              </p>
+              <div class="profile-note">
+                <span class="note-kicker">Research profile</span>
+                <p>
+                  Research across face recognition, knowledge distillation, model quantization, face image quality
+                  assessment, and synthetic data from deep generative models.
+                </p>
+              </div>
+            </div>
+            <div class="about-aside">
+              <figure class="portrait">
+                <img src="me.png" alt="Portrait" loading="lazy" />
+                <figcaption>Portrait</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section publications" id="publications" aria-labelledby="publications-title">
+        <div class="section__idx">02</div>
+        <div class="section__label">Publications</div>
+        <div class="section__body">
+          <div class="section-head">
+            <h2 id="publications-title">Selected Publications</h2>
+            <a href="https://scholar.google.de/citations?user=PC1RmJMAAAAJ" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+          </div>
+          <ol class="pub-list" aria-label="Selected publications">
+            <li class="pub-item">
+              <article>
+                <div class="pub-meta">
+                  <h3>BLenDeR: Blended Text Embeddings and Diffusion Residuals for Intra-Class Image Synthesis in Deep Metric Learning</h3>
+                  <p class="pub-authors">Jan Niklas Kolf, Ozan Tezcan, Justin Theiss, Hyung Jun Kim, Wentao Bao, Bhargav Bhushanam, Khushi Gupta, Arun Kejariwal, Naser Damer, Fadi Boutros</p>
+                  <p class="pub-venue">Under review</p>
+                </div>
+                <div class="pub-links" aria-label="Publication links">
+                  <a href="https://arxiv.org/abs/2601.20246" target="_blank" rel="noreferrer" aria-label="Open BLenDeR on arXiv">arXiv <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/facebookresearch/meta_ai_blender" target="_blank" rel="noreferrer" aria-label="Open BLenDeR code on GitHub">Code <span aria-hidden="true">↗</span></a>
+                  <a href="https://huggingface.co/facebook/meta_ai_blender" target="_blank" rel="noreferrer" aria-label="Open BLenDeR on Hugging Face">Hugging Face <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            </li>
+            <li class="pub-item">
+              <article>
+                <div class="pub-meta">
+                  <h3>PreFIQs: Face Image Quality Is What Survives Pruning</h3>
+                  <p class="pub-authors">Jan Niklas Kolf, Guray Ozgur, Andrea Atzori, Žiga Babnik, Vitomir Štruc, Naser Damer, Fadi Boutros</p>
+                  <p class="pub-venue">CVPR 2026 Workshops</p>
+                </div>
+                <div class="pub-links" aria-label="Publication links">
+                  <a href="https://arxiv.org/abs/2605.13396" target="_blank" rel="noreferrer" aria-label="Open PreFIQs on arXiv">arXiv <span aria-hidden="true">↗</span></a>
+                  <a href="https://openaccess.thecvf.com/content/CVPR2026W/BIOM2026/papers/Kolf_PreFIQs_Face_Image_Quality_Is_What_Survives_Pruning_CVPRW_2026_paper.pdf" target="_blank" rel="noreferrer" aria-label="Open PreFIQs PDF">PDF <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/jankolf/PreFIQs" target="_blank" rel="noreferrer" aria-label="Open PreFIQs code on GitHub">Code <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            </li>
+            <li class="pub-item">
+              <article>
+                <div class="pub-meta">
+                  <h3>GraFIQs: Face Image Quality Assessment Using Gradient Magnitudes</h3>
+                  <p class="pub-authors">Jan Niklas Kolf, Naser Damer, Fadi Boutros</p>
+                  <p class="pub-venue">CVPR 2024 Workshops</p>
+                </div>
+                <div class="pub-links" aria-label="Publication links">
+                  <a href="https://arxiv.org/abs/2404.12203" target="_blank" rel="noreferrer" aria-label="Open GraFIQs on arXiv">arXiv <span aria-hidden="true">↗</span></a>
+                  <a href="https://openaccess.thecvf.com/content/CVPR2024W/BIOMET/papers/Kolf_GraFIQs_Face_Image_Quality_Assessment_Using_Gradient_Magnitudes_CVPRW_2024_paper.pdf" target="_blank" rel="noreferrer" aria-label="Open GraFIQs PDF">PDF <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/jankolf/GraFIQs" target="_blank" rel="noreferrer" aria-label="Open GraFIQs code on GitHub">Code <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section research" id="research" aria-labelledby="research-title">
+        <div class="section__idx">03</div>
+        <div class="section__label">Research</div>
+        <div class="section__body">
+          <h2 id="research-title">Current work</h2>
+          <ul class="plain-list">
+            <li>
+              <span class="list-index">a.</span>
+              <span>Deep Generative Models for privacy-preserving Face Recognition</span>
+            </li>
+            <li>
+              <span class="list-index">b.</span>
+              <span>Training- and label-free Face Image Quality Assessment</span>
+            </li>
+            <li>
+              <span class="list-index">c.</span>
+              <span>Knowledge Distillation for efficient Face Recognition</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="section__idx">04</div>
+        <div class="section__label">Contact</div>
+        <div class="section__body contact__body">
+          <div>
+            <h2 id="contact-title">Send a note with context.</h2>
+          </div>
+          <div class="contact-links">
+            <button class="secure-email" type="button" data-contact-token="Z2YwdGdocWpwd2N0aDBmaWtCaG5xbTB1Y25ta3AwcGNs">
+              <span>Reveal email</span>
+              <span aria-hidden="true">↗</span>
+            </button>
+            <noscript>
+              <span class="contact-fallback">Email protected. Enable JavaScript to reveal the address.</span>
+            </noscript>
+            <a href="https://scholar.google.de/citations?user=PC1RmJMAAAAJ" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+            <a href="https://orcid.org/0000-0002-0037-5334" target="_blank" rel="noreferrer">ORCID <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <span class="footer__label">Location</span>
+        <span class="footer__line">Fraunhofer IGD, Darmstadt, Germany</span>
+      </div>
+      <div>
+        <span class="footer__label">Last Update</span>
+        <span class="footer__line">4 June 2026</span>
+      </div>
+      <div>
+        <span class="footer__label">Legal</span>
+        <a class="footer__line" href="imprint.html">Imprint ↗</a>
+      </div>
+    </footer>
+    <script src="script.js?v=20260515-random-hero-terms"></script>
+  </body>
+</html>
