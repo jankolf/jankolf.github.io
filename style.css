@@ -578,6 +578,12 @@ main {
   font-style: italic;
 }
 
+.pub-award {
+  color: var(--ink);
+  font-style: italic;
+  font-weight: 700;
+}
+
 .pub-links {
   display: flex;
   flex-wrap: wrap;
