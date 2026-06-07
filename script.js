@@ -449,10 +449,25 @@
   updateLiveTerm(randomTermIndex());
   scheduleLiveTerm();
 
+  async function fetchMeshText(path) {
+    if (!("DecompressionStream" in window)) {
+      return fetch(path).then((response) => response.text());
+    }
+
+    try {
+      const response = await fetch(`${path}.gz`);
+      if (!response.ok || !response.body) throw new Error("Compressed mesh unavailable");
+      const stream = response.body.pipeThrough(new DecompressionStream("gzip"));
+      return new Response(stream).text();
+    } catch {
+      return fetch(path).then((response) => response.text());
+    }
+  }
+
   async function initMeshHero() {
     const [highText, lowText] = await Promise.all([
-      fetch("david_decimated_lowpoly.obj").then((response) => response.text()),
-      fetch("david_decimated_lowpoly_2.obj").then((response) => response.text())
+      fetchMeshText("david_decimated_lowpoly.obj"),
+      fetchMeshText("david_decimated_lowpoly_2.obj")
     ]);
     const high = normalizeMesh(parseOBJ(highText));
     const low = normalizeMesh(parseOBJ(lowText));
